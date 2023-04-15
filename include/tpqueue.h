@@ -23,7 +23,7 @@ class TPQueue {
     } else {
       int i = TAIL - 1;
       bool flag = false;
-      while (i >= HEAD && item.prior > items[i].prior){
+      while (i >= HEAD && item.prior > items[i].prior) {
         flag = true;
         items[i + 1] = items[i];
         items[i] = item;
@@ -35,7 +35,7 @@ class TPQueue {
       TAIL++;
       counter++;
     }
-    if (TAIL > MAXsize){
+    if (TAIL > MAXsiz) {
       TAIL -= MAXsize + 1;
     }
   }
