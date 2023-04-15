@@ -35,7 +35,7 @@ class TPQueue {
       TAIL++;
       counter++;
     }
-    if (TAIL > MAXsiz) {
+    if (TAIL > MAXsize) {
       TAIL -= MAXsize + 1;
     }
   }
